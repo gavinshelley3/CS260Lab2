@@ -6,7 +6,7 @@ document
     if (value === "") return;
     console.log(value);
     const url =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       value +
       ",US&units=imperial" +
       "&APPID=e7943d4407bf46919baafb77f52f78f5";
@@ -39,7 +39,7 @@ document
         results += "<div class='currentWeatherCardIcon'>";
         for (let i = 0; i < json.weather.length; i++) {
           results +=
-            '<img src="http://openweathermap.org/img/w/' +
+            '<img src="https://openweathermap.org/img/w/' +
             json.weather[i].icon +
             '.png"/>';
           results +=

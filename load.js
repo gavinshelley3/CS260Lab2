@@ -24,7 +24,7 @@ function main() {
 async function getWeather(majorCities, element, i) {
   try {
     let url =
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
       majorCities[i] +
       ",US&units=imperial" +
       "&APPID=e7943d4407bf46919baafb77f52f78f5";
